@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>MyTicTacToe.com</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="gameBoard">
+            <div class="strikeThrough"></div>
+            <div class="square bl-0 bt-0"><span id="1" class="squareValue"></span></div>
+            <div class="square bt-0"><span id="2" class="squareValue"></span></div>
+            <div class="square bt-0 br-0"><span id="3" class="squareValue"></span></div>
+            <div class="square bl-0"><span id="4" class="squareValue"></span></div>
+            <div class="square"><span id="5" class="squareValue"></span></div>
+            <div class="square br-0"><span id="6" class="squareValue"></span></div>
+            <div class="square bl-0 bb-0"><span id="7" class="squareValue"></span></div>
+            <div class="square bb-0"><span id="8" class="squareValue"></span></div>
+            <div class="square bb-0 br-0"><span id="9" class="squareValue"></span></div>
+        </div>
+        <div class="gameInfo">
+            <h1>Lets play the game of tic tac toe</h1>
+            <div class="turnInfo">
+                <span class="info">Turn of X</span>
+                <button id="Reset" type="reset">Reset</button>
+            </div>
+            <div id="winningGif">
+                <img src="excited.gif" alt="excited-gif">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

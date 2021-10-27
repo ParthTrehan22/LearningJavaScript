@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: larger;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.gameContainer{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+
+.square{
+    border: black 2px solid;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover{
+    background-color: whitesmoke;
+}
+
+.turnInfo h1{
+    padding: 0px 0px 20px 0px;
+}
+
+.turnInfo{
+    padding: 0px 30px;
+}
+
+#winningGif{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.info span{
+    padding-right: 20px;
+}
+
+#Reset{
+    font-family: 'Varela Round', sans-serif;
+    padding: 5px 15px;
+    border: 1px grey solid;
+    border-radius: 3px;
+    background-color: rgb(223, 223, 223);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+#Reset:hover{
+    background-color: whitesmoke;
+}
+
+.gameInfo h1{
+    margin: 0px 0px 20px 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .gameContainer {
+      flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+    .gameInfo h1{
+        font-size: 1.2rem;
+    }
+    .gameBoard{
+        display: grid;
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+}
+
+.strikeThrough{
+    background-color: greenyellow;
+    width: 3px;
+    height: 30vw;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/* Some utility classes */
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
